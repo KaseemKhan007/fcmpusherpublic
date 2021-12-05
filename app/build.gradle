@@ -33,7 +33,22 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.4.0'
     implementation 'com.google.android.material:material:1.4.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.2'
+    implementation project(path: ':fcmpusherlib')
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+
+
+
+    // Import the Firebase BoM
+
+    implementation platform('com.google.firebase:firebase-bom:29.0.1')
+
+
+
+
+    // implementation 'com.github.KaseemKhan007:fcmpusherpublic:-SNAPSHOT'
+
+ //   implementation 'com.github.KaseemKhan007:fcmpusherpublic:Tag'
 }
+apply plugin: 'com.google.gms.google-services'
